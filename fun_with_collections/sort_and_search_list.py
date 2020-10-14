@@ -29,8 +29,10 @@ def search_list(target):
     :param target: the target that the function is looking for
     :return: message declaring if the target was found or not
     """
+
     # the first letter of the target used to identify the best way to sort the list.
-    sorted_list = []
+    #sorting by alphabetical order would lead to a faster search if the list were significantly larger
+
     first_target = target[:1]
     if first_target < 'n':
         sorted_list = sort_list("forward")
@@ -39,14 +41,17 @@ def search_list(target):
         sorted_list = sort_list("reverse")
 
 
-    for i in range(len(sorted_list)):
-        if sorted_list[i] == target:
-            return "The target is located in the list"
+    try:
+        index = sorted_list.index(target)
+    except ValueError:
+        return -1
 
-    return "The target is not located in the list"
+    else:
+        return index
 
 
 
 if __name__ == '__main__':
-    print(search_list("Kyle"))
+    print(search_list("Zane"))
+
 
