@@ -2,7 +2,7 @@
 Author: Alex Alvarado
 Program: sort_and_search_array.py
 date: 10-11-20
-description:
+description: sorts through an array looking for a target value and outputs if it found the value.
 """
 
 
