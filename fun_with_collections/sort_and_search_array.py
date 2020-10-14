@@ -28,9 +28,9 @@ def search_array(target):
     try:
         index = sorted_array.index(target)
     except ValueError:
-        print("-1")
+        return -1
     else:
-        print(index)
+        return index
 
 
 if __name__ == '__main__':
