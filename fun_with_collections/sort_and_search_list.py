@@ -20,7 +20,7 @@ def sort_list(sort):
         return (sorted(List))
     else:
         return(sorted(List, reverse=True))
-
+    #return statements are included because it has the search_list function requires it to performs its function
 
 
 def search_list(target):
