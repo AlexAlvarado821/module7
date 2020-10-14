@@ -25,7 +25,7 @@ def average_scores(*args, **kwargs):
     return 'Result: name = {} gpa = {} course = {}'.format(kwargs['last_name'], average, kwargs['major'])
 
 if __name__ == '__main__':
-    info = average_scores(4, 3, 2, 4, first_name='Michelle', last_name='Alex', major='U.S Domination')
+    info = average_scores(4, 3, 2, 4, first_name='Doesnt matter', last_name='Alex', major='U.S Domination')
     print(info)
 
 

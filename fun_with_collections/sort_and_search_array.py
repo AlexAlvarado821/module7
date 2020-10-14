@@ -15,37 +15,24 @@ def sort_array(input_array):
     """
 
     :param input_array:
-    :return:
+    :return: returns a sorted list
     """
-    new_list = input_array.tolist()
-    print (new_list)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return(sorted(input_array))
+    #uses the return because this function serves one purpose that aids the other function.
 
 
 def search_array(target):
     my_array = arr.array('i', [1, 3, -1, 27, 56, 11])
-    print(my_array[3])
-    normal_list = sort_array(my_array)
+    sorted_array = sort_array(my_array.tolist())
 
-    print(normal_list)
-
-
-    return not_found_msg
+    try:
+        index = sorted_array.index(target)
+    except ValueError:
+        print("-1")
+    else:
+        print(index)
 
 
 if __name__ == '__main__':
-    search_array(3)
+    search_array(20)
 
